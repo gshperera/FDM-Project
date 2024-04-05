@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Predictor | Mobile Phone Price</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Mobile Phone Price Predictor</h2>
+
+      <form action="" method="post">
+        <div class="features">
+          <div class="inputfield">
+            <label for="ram">RAM (GB): </label><br />
+            <input type="text" name="ram" id="ram" required />
+          </div>
+
+          <div class="inputfield">
+            <label for="rom">ROM (GB): </label><br />
+            <input type="text" name="rom" id="rom" required />
+          </div>
+
+          <div class="inputfield">
+            <label for="mobile_size">Size (inches): </label>
+            <input type="text" name="mobile_size" id="mobile_size" required />
+          </div>
+
+          <div class="inputfield">
+            <label for="primary_cam">Primary Camera (MP): </label>
+            <input type="text" name="primary_cam" id="primary_cam" required />
+          </div>
+
+          <div class="inputfield">
+            <label for="selfi_cam">Selfi Camera (MP): </label>
+            <input type="text" name="selfi_cam" id="selfi_cam" required />
+          </div>
+
+          <div class="inputfield">
+            <label for="battery">Battery (mAh): </label>
+            <input type="text" name="battery" id="battery" required />
+          </div>
+        </div>
+
+        <div class="company">
+          <label>Select a Brand</label>
+          <div class="brands">
+            <div>
+              <input type="radio" name="company" id="apple" value="apple" />
+              <label for="apple">Apple</label>
+            </div>
+            <div>
+              <input type="radio" name="company" id="nokia" value="nokia" />
+              <label for="nokia">Nokia</label>
+            </div>
+            <div>
+              <input type="radio" name="company" id="oppo" value="oppo" />
+              <label for="oppo">Oppo</label>
+            </div>
+            <div>
+              <input type="radio" name="company" id="redmi" value="redmi" />
+              <label for="redmi">Redmi</label>
+            </div>
+            <div>
+              <input type="radio" name="company" id="samsung" value="samsung" />
+              <label for="samsung">Samsung</label>
+            </div>
+            <div>
+              <input type="radio" name="company" id="vivo" value="vivo" />
+              <label for="vivo">Vivo</label>
+            </div>
+          </div>
+        </div>
+
+        <input class="btn" type="submit" value="Predict Price" />
+      </form>
+    </div>
+
+    <div>
+      {% if pred != 0 %}
+      <div class="result">
+        <h3>Estimated Price : LKR {{pred}}</h3>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>

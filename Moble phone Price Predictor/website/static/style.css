@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-image: url("business-data-financial-figures-visualiser-graphic_31965-23939.avif");
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background-color: gainsboro;
+  box-shadow: 2px 2px 4px black;
+  padding: 30px;
+}
+
+.container form {
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+form .inputfield label {
+  font-size: 12px;
+}
+
+form .inputfield input {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.company {
+  /* background-color: white; */
+  margin-top: 20px;
+  /* margin-right: 50px; */
+}
+.brands {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  padding: 7px;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.result {
+  /* background-color: rgb(209, 209, 33); */
+  background-color: rgb(12, 176, 176);
+  padding: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 2px 2px 4px black;
+  margin-top: 15px;
+  text-align: center;
+}
